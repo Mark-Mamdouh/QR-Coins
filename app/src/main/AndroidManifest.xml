@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theprogrammer.qrcoins">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="QR Coins"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QrCoins">
+        <activity android:name=".Open_Link"></activity>
+        <activity android:name=".Scanned_Code" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Splash_Screen"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Add_Name" />
+        <activity android:name=".QR_Generator" />
+        <activity android:name=".Scan_Name_To_Add" />
+        <activity android:name=".Scan_Name_To_Remove" />
+        <activity android:name=".Generator_And_Scanner" />
+        <activity android:name=".Generate" />
+        <activity android:name=".Get_Names" />
+        <activity android:name=".Winner1" />
+        <activity android:name=".Winner2" />
+        <activity android:name=".Winner3" />
+        <activity android:name=".Show_All_Names" />
+        <activity android:name=".Add_Coins" />
+        <activity android:name=".Remove_Coins" />
+        <activity android:name=".Select_Name" />
+        <activity android:name=".Choose_Coin_To_Add" />
+        <activity android:name=".Choose_Coin_To_Remove" />
+        <activity android:name=".Other_Coins_add" />
+        <activity android:name=".Other_Coins_remove" />
+        <activity android:name=".Delete" />
+        <activity android:name=".Reset_All_Names" />
+        <activity android:name=".Reset_All_Coins" />
+    </application>
+
+</manifest>
